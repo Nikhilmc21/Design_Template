@@ -1,0 +1,94 @@
+#Agree_Button_Location{
+    border-radius: 70px;
+    background-color: #FFAC1C;
+    color:white;
+    width:18vw;
+    height:fit-content;
+    font-size: 3vw;
+    font-family: 'Dancing Script', cursive;
+}
+#Heading_Location{
+    color:white;
+    font-size: 4vw;
+    font-family: 'Rowdies', cursive;
+}   
+#everything{
+    background-image: linear-gradient(to right,  orange , orange, orange, #FFBF00, #FFAC1C);
+    background-size: cover;
+}  
+#centre_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin:auto;
+    height:90%;
+}
+#Paragraph_Location{
+    font-size:1vw;
+    color:white;
+    font-family: 'Rowdies', cursive;
+}
+
+.wave1{
+    background-image:url(wave.png);
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:5vw;
+    background-size:cover;
+    animation : animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position-x:0px;
+    }
+    100%{
+        background-position-x:100vw;
+    }
+}
+
+.wave2{
+    background-image:url(wave.png);
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:5vw;
+    background-size:cover;
+    animation : animate_wave 1.5s linear infinite;
+    opacity:0.5;
+}
+
+@keyframes animate_wave{
+    0%{
+        background-position-x:0px;
+    }
+    100%{
+        background-position-x:-100vw;
+    }
+}
+#white_slide{
+    position:fixed;
+    width:100%;
+    height:5vw;
+    background-color: white;
+    bottom:0;
+    left:0;
+    visibility: hidden;
+}
+#white_slide.animate {
+    animation : slide_up_wavebox 2s ease-in-out forwards;
+    visibility: visible;
+}
+
+@keyframes slide_up_wavebox{
+    0%{
+        height:1vh;
+    }
+    100%{
+        height:100vh;
+    }
+}

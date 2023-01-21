@@ -1,0 +1,12 @@
+#bigimg{
+    margin-top:-0.4vw;
+    margin-left:-0.4vw;
+    width:66%;
+}
+#flex-container{
+    width:40%;
+}
+.boximg{
+    display:inline-block;
+    width:10%;
+}
