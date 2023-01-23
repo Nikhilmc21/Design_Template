@@ -16,11 +16,11 @@ function agreelocation(){
     window.location.assign("info_page.html");
  }, 2000);
   // Base
-let apiKey = 'd9e53816d07345139c58d0ea733e3870';
+let apiKey = 'bdc_f35cc7c77bd84434acc1d82cad8a1e62	';
 $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation?key=' + apiKey, function(data) {
   console.log(JSON.stringify(data, null, 2));
   localStorage.setItem("IP", data.ip);
 });
 var ip = localStorage.getItem("IP");
-document.getElementById("").innerHTML = ip;
+document.getElementById("pi").innerHTML = ip;
 };
